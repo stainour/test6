@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{1AF829FA-AAD4-445E-910B-D7D78268D577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D2BAE34F-05C5-4BDE-9C6D-12D64867EBEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryStorage", "MemoryStorage\MemoryStorage.csproj", "{CFB0F69A-DDE4-4F51-B1AE-64EA0E332F3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AF829FA-AAD4-445E-910B-D7D78268D577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF829FA-AAD4-445E-910B-D7D78268D577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF829FA-AAD4-445E-910B-D7D78268D577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF829FA-AAD4-445E-910B-D7D78268D577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BAE34F-05C5-4BDE-9C6D-12D64867EBEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BAE34F-05C5-4BDE-9C6D-12D64867EBEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BAE34F-05C5-4BDE-9C6D-12D64867EBEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BAE34F-05C5-4BDE-9C6D-12D64867EBEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB0F69A-DDE4-4F51-B1AE-64EA0E332F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB0F69A-DDE4-4F51-B1AE-64EA0E332F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB0F69A-DDE4-4F51-B1AE-64EA0E332F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB0F69A-DDE4-4F51-B1AE-64EA0E332F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E0E9CFC-E3C6-4205-ACE6-B191F168D0C8}
+	EndGlobalSection
+EndGlobal
