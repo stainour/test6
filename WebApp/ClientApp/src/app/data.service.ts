@@ -9,13 +9,13 @@ import {
 import { Observable } from 'rxjs/Observable';
 
 export abstract class DataService<TModel extends IdentityModel> {
-  private state: DataSourceRequestState = {
+  public state: DataSourceRequestState = {
     skip: 0,
     take: 5,
   };
 
-  private data: GridDataResult;
-  private loading: boolean;
+  public data: GridDataResult;
+  public loading: boolean;
   constructor(protected readonly httpClient: HttpClient, protected readonly baseUrl: string) {
   }
 

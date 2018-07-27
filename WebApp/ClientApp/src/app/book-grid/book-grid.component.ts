@@ -94,7 +94,7 @@ import { SortDescriptor } from '@progress/kendo-data-query';
 
     <ng-template kendoGridEditTemplate let-dataItem="dataItem" let-column="column" let-formGroup="formGroup" let-isNew="isNew">
       <img *ngIf="dataItem.Image !== null"
-           [src]="dataItem.Image" class="image" /> 
+           [src]="dataItem.Image" class="image" />
     <div>
       <label for="filePicker">Choose a file:</label><br>
       <input class="k-button" type="file" accept="image/*" (change)="handleFileSelect($event,dataItem,formGroup.get('Image'))">
@@ -144,7 +144,7 @@ export class BookGridComponent extends GridComponent<Book> implements OnInit {
       return dataItem.Authors.map(e => this.formatAuthor(e)).join(", ");
     }
   }
-  private dataStateChange(state: DataStateChangeEvent): void {
+  public dataStateChange(state: DataStateChangeEvent): void {
     this.cookieService.set(this.cookieName, JSON.stringify(state.sort));
     this.dataService.dataStateChange(state);
   }
