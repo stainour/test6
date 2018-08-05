@@ -30,7 +30,6 @@ import { GridComponent } from "../grid.component"
   <kendo-grid-command-column title="" width="220">
     <ng-template kendoGridCellTemplate let-isNew="isNew">
       <button kendoGridEditCommand [primary]="true">Edit</button>
-      <button kendoGridRemoveCommand>Remove</button>
       <button kendoGridSaveCommand [disabled]="formGroup?.invalid">{{ isNew ? 'Add' : 'Update' }}</button>
       <button kendoGridCancelCommand>{{ isNew ? 'Discard changes' : 'Cancel' }}</button>
     </ng-template>

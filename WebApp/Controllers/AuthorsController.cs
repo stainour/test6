@@ -1,9 +1,7 @@
 ﻿using Kendo.Mvc.UI;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
-using WebApp.Commands;
 using WebApp.Commands.Author;
 using WebApp.Models;
 using WebApp.Queries;
@@ -26,18 +24,6 @@ namespace WebApp.Controllers
         public async Task<ActionResult> Create(AuthorDto dto)
         {
             await _mediator.Send(new CreateAuthorCommand(dto));
-            return NoContent();
-        }
-
-        [HttpDelete("{id:int}")]
-        public async Task<ActionResult> Delete([Range(1, int.MaxValue)]int id)
-        {
-            var deleteResult = await _mediator.Send(new DeleteAuthorCommand(id));
-
-            if (deleteResult == DeleteResult.AlreadyDeleted)
-            {
-                return NotFound();
-            }
             return NoContent();
         }
 
